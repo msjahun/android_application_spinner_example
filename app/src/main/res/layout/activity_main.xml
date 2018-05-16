@@ -66,7 +66,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="194dp"
-        android:layout_marginEnd="66dp"
+        android:layout_marginEnd="13dp"
         android:ems="10"
         android:hint="Mobile Number"
         android:inputType="textPersonName" />
@@ -110,17 +110,18 @@
         android:text="Register" />
 
     <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="76dp"
-        android:layout_height="44dp"
-        android:layout_alignTop="@+id/editTextMobileNumber"
-        android:layout_toStartOf="@+id/editTextMobileNumber" />
+        android:id="@+id/spinnerCountryCode"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/editTextEmailAddress"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/spinner2"
+        android:layout_alignStart="@+id/spinnerCountryCode"
         android:layout_alignTop="@+id/spinnerMain"
         android:text="Gender" />
 
@@ -129,7 +130,7 @@
         android:layout_width="144dp"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/editTextUsername"
-        android:layout_alignStart="@+id/textView4"
+        android:layout_alignParentStart="true"
         android:text="Username" />
 
     <TextView
@@ -137,7 +138,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/editTextPassword"
-        android:layout_toStartOf="@+id/editTextMobileNumber"
+        android:layout_toStartOf="@+id/spinnerMain"
         android:text="Password" />
 
     <TextView
@@ -145,7 +146,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/editTextEmailAddress"
-        android:layout_toStartOf="@+id/editTextMobileNumber"
+        android:layout_toStartOf="@+id/editTextFullName"
         android:text="Email" />
 
     <TextView
@@ -153,6 +154,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/editTextFullName"
-        android:layout_toStartOf="@+id/editTextFullName"
+        android:layout_toStartOf="@+id/checkBoxTermsAndConditions"
         android:text="Full Name" />
 </RelativeLayout>
